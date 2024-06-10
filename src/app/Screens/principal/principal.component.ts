@@ -23,4 +23,8 @@ export class PrincipalComponent {
     window.open('/stock', '_blank');
   }
 
+  openReserva() {
+    window.open('/reserva', '_blank');
+  }
+
 }

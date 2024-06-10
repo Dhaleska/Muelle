@@ -15,9 +15,9 @@
       </ul>
     </div>
   
-    <!-- Sección de items del menú -->
+    <!-- Selecciona el menú -->
     <div class="menu-items">
-      <h3>Items del Menú</h3>
+      <h3>Menú</h3>
       <ul>
         <li *ngFor="let item of filteredMenuItems" (click)="addToOrder(item)">
           {{ item.name }} - S/{{ item.price }}
@@ -27,7 +27,7 @@
   
     <!-- Sección de la comanda -->
     <div class="order-summary">
-      <h3>Resumen de la Comanda</h3>
+      <h3>Total del Pedido</h3>
       <ul>
         <li *ngFor="let item of order">
           {{ item.name }} - S/{{ item.price }}
