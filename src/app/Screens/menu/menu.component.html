@@ -1,0 +1,39 @@
+<div class="menu-container">
+    <!-- Título del menú -->
+    <div class="menu-header">
+      <h2>Comanda del Restaurante</h2>
+    </div>
+  
+    <!-- Sección de categorías -->
+    <div class="menu-categories">
+      <h3>Categorías</h3>
+      <ul>
+        <li (click)="selectCategory('entradas')">Entradas</li>
+        <li (click)="selectCategory('platos-principales')">Platos Principales</li>
+        <li (click)="selectCategory('postres')">Postres</li>
+        <li (click)="selectCategory('bebidas')">Bebidas</li>
+      </ul>
+    </div>
+  
+    <!-- Sección de items del menú -->
+    <div class="menu-items">
+      <h3>Items del Menú</h3>
+      <ul>
+        <li *ngFor="let item of filteredMenuItems" (click)="addToOrder(item)">
+          {{ item.name }} - S/{{ item.price }}
+        </li>
+      </ul>
+    </div>
+  
+    <!-- Sección de la comanda -->
+    <div class="order-summary">
+      <h3>Resumen de la Comanda</h3>
+      <ul>
+        <li *ngFor="let item of order">
+          {{ item.name }} - S/{{ item.price }}
+        </li>
+      </ul>
+      <p>Total: S/{{ getTotal() }}</p>
+    </div>
+  </div>
+  
