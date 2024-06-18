@@ -1,0 +1,157 @@
+/* Reset general y configuración de fuente */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Contenedor principal */
+body {
+    display: flex;
+    height: 100%;
+}
+
+/* Barra lateral */
+.sidebar {
+    width: 250px;
+    background-color: #2c3e50;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box; /* Asegura que el padding no expanda la barra lateral */
+    height: 100vh;
+}
+
+/* Logo */
+.logo {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Barra de navegación */
+.navbar {
+    width: 100%;
+    margin-top: 120px; /* Espacio superior */
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    padding: 12px 0; /* Aumentamos el padding vertical */
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navbar .material-icons {
+    margin-right: 10px;
+}
+
+.navbar li:hover {
+    background-color: #34495e;
+    border-radius: 5px;
+    margin-bottom: 5px; /* Espacio inferior en el hover */
+}
+
+
+/* Botones inferiores */
+.bottom-buttons {
+    margin-top: auto;
+    width: 100%;
+    text-align: center;
+}
+
+/* Asegúrate de que los estilos estén disponibles globalmente */
+.inicio-button{
+    color:#34495e;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+ 
+.logout {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    cursor: pointer;
+    
+}
+
+.inicio-button .material-icons,
+.logout .material-icons {
+    margin-right: 10px;
+}
+
+.inicio-button:hover,
+.logout:hover {
+    text-decoration: underline;
+}
+
+
+/* Separador */
+.divider {
+    width: 100%;
+    border-top: 1px solid #ffffff50;
+    margin-bottom: 10px;
+}
+
+/* Contenido principal */
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    box-sizing: border-box; /* Asegura que el padding no expanda el contenido */
+    overflow: hidden; /* Evita el desplazamiento */
+}
+
+/* Encabezado */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Espaciado entre elementos */
+    margin-bottom: 20px; /* Separación del contenido principal */
+}
+
+header h1 {
+    margin: 0; /* Elimina el margen por defecto */
+}
+
+/* Estilo para la categoría */
+.category {
+    margin-bottom: 20px;
+}
+
+.category label,
+.category input,
+.category button {
+    display: block;
+    margin: 10px 0;
+}
+
+/* Estilo para la tabla */
+.table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.table button {
+    margin-right: 5px;
+}

@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './Screens/login/login.component';
 import { MenuComponent } from './Screens/menu/menu.component';
 import { PrincipalComponent } from './Screens/principal/principal.component';
+import { GeneralComponent } from './Screens/general/general.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     MenuComponent,
-    PrincipalComponent
+    PrincipalComponent,
+    GeneralComponent
   ],
   imports: [
     BrowserModule,

@@ -1,20 +1,30 @@
 <div class="container">
 
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <img src="../../../assets/logo.png" alt="Logo" class="logo">
+    </div>
+  </nav>
+
   <div class="principal-container">
-    <h2>¿Qué empezarás a hacer hoy?</h2>
+    <h2>¿QUÉ EMPEZARÁS A HACER HOY?</h2>
 
     <div class="button-row">
-      <button class="principal-button" (click)="openMenu()">Orden</button>
-      <button class="principal-button" (click)="openReporte()">Reporte</button>
-      <button class="principal-button" (click)="openFactura()">Factura</button>
+      <button class="principal-button" (click)="openGeneral()">
+        <span class="material-icons">admin_panel_settings</span> General
+      </button>
+      <button class="principal-button" (click)="openMenu()">
+        <span class="material-icons">restaurant</span> Platillos
+      </button>
+      <button class="principal-button" (click)="openOrdenes()">
+        <span class="material-icons">draw</span> Ordenes
+      </button>
     </div>
 
     <div class="button-row">
-      <button class="principal-button" (click)="openStock()">Stock</button>
-      <button class="principal-button" (click)="openReserva()">Reserva</button>
-      <button class="principal-button">Botón 6</button>
+      <button class="principal-button" (click)="openDashboard()">
+        <span class="material-icons">dashboard</span> Dashboard
+      </button>
     </div>
-
   </div>
-
 </div>

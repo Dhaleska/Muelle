@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-principal',
@@ -7,24 +8,21 @@ import { Component } from '@angular/core';
 })
 export class PrincipalComponent {
 
+  constructor(private router: Router) { }
+
+  openGeneral() {
+    this.router.navigate(['/general']);
+  }
+
   openMenu() {
-    window.open('/menu', '_blank');
+    this.router.navigate(['/menu']);
   }
 
-  openReporte() {
-    window.open('/reporte', '_blank');
+  openOrdenes() {
+    this.router.navigate(['/ordenes']);
   }
 
-  openFactura() {
-    window.open('/factura', '_blank');
+  openDashboard() {
+    this.router.navigate(['/dashboard']);
   }
-
-  openStock() {
-    window.open('/stock', '_blank');
-  }
-
-  openReserva() {
-    window.open('/reserva', '_blank');
-  }
-
 }
